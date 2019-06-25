@@ -3,29 +3,37 @@ title: "Overview"
 path: /docs/overview
 ---
 # Welcome to Appsody
-- What is Appsody, Why appsody?
+Appsody has been designed to help you compose a masterpiece of an application for cloud. 
 
-Components
-- CLI - Appsody command line tool.
-- Stacks - Allow for rapid development whilst giving the stack developer the ability to control the overall applications that are created from it.
+Our aims were to simplify the experience for developers - now asked to have full-stack expertise and responsibilities, and allow them to focus on their application code; and to enable architects to curate an opinionated set of technologies - configurable, reusable and already infused with cloud native capabilities.
 
-## Audience
-### Appsody is designed for different personas:
+There are 3 key components of Appsody:
 
-Image explaing the Appsody flow..?
+### Appsody Stacks
+These are configurable technology stacks built with popular runtimes and frameworks, such as Java with Eclipse Microprofile and Node.js with Express, that provide the foundation for building applications which can be deployed and managed effectively in Kubernetes. Stacks allow for rapid development, whilst giving the stack provider the ability to control how the applications are composed, for example which security policies are applied, or which version of a dependency is pulled.
 
-### Platform architects..
+[More info on Appsody Stacks](link)
 
-Platform architect's role (how they can utilize Appsody)
+### Appsody Hub
+The central point of control for Appsody Stacks. This is where you can find available stacks, create new stacks or modify existing ones. You can utilise what's there in the public repo, and/or clone to provide a private/interal Hub based on your requirements. By making changes to the Stacks in the Hub, you are able to mass-apply updates to applications which have been built on these, simply by restarting the application.
 
-### Developers..
+[More info on Appsody Hub](link)
 
-Developers role (how they can utilize Appsody)
-(Link to slack)
+### Appsody CLI
+No project is complete without a nice new CLI to play with. The Appsody CLI is powerful and intiutive, and allows developers to discover available stacks, bring them into their local development environment, and build/run/test/deploy locally. The Docker container for your application built as a result, can integrated with Tekton pipelines as described [here](TODO) and deployed to Kubernetes cloud environements.
 
-### Contributors..
+[More info on Appsody CLI](link)
 
-To get involved, see [CONTRIBUTING](../CONTRIBUTING)
+## How does it work?
+[TODO CHRIS / Neeraj] Describe common workflow/controller
+
+
+## Contributing
+
+We welcome all contributions, see [CONTRIBUTING](../CONTRIBUTING) and come chat to us in [Slack](if you'd like to get involved).
+
+Want to see your framework available as an Appsody Stack? See [Link](here) and join the #content-providers channel to introduce yourself!
+
 
 ## Documentation
 
