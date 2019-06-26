@@ -43,11 +43,24 @@ The `appsody deploy` command is provided as an example of how an application cre
 The **pre-requisites** to successfully run `appsody deploy` are:
 1) You must have access to a Kubernetes cluster, with Knative Serving (and its pre-requisites) installed and running (you can find what it takes to configure Knative [here](https://knative.dev/docs/install/))
 2) You must have configured your `kubectl` CLI to point to that cluster. The appsody CLI calls `kubectl` under the covers for you.
-3)  Your target cluster can pull images from a Docker registry, such as Docker Hub.
+3)  If you intend to push the Docker image containing your application to Docker Hub, your target cluster must be configured to be able to pull images from Docker Hub.
 
-Here is how you would deploy your application, if your project was named `appsody-project`, under the assumption that you want to use Docker Hub to host your deployment image:
+### Deploying your application to a locally installed Kubernetes cluster
+If you have installed a Kubernetes cluster on your development workstation, and want to use your local Docker image cache - rather than pushing the image to Docker Hub - you should make sure you have set up your Kubernetes cluster to consume images from the local Docker cache.
+
+You can then deploy your Appsody project locally by running:
 ```
-appsody deploy -t myaccount/appsody-project --push --namespace mynamespace
+appsody deploy
+```
+This command does the following:
+1) It calls `appsody build` and creates a deployment image, as described in the previous section.
+2) It tags the image with the special prefix `local.dev`, making it accessible to your Kubernetes cluster.
+3) It creates a Knative Serving manifest file named `appsody-service-nnnnnn.yaml`, where <nnnnnn> is a random numerical value. This yaml file is then used to issue a `kubectl apply -f` command against the target Kubernetes cluster. This yaml file is then used to issue a `kubectl apply -f` command against the target Kubernetes cluster.
+
+### Deploying your application by pushing your image to Docker Hub
+If your cluster is configured to pull imaeges from Docker Hub, here is how you would deploy your application:
+```
+appsody deploy -t <myaccount/appsody-project> --push --namespace mynamespace
 ```
 The command shown above does the following:
 1) It calls `appsody build` and creates a deployment image, as described in the previous section.
