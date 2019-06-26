@@ -1,7 +1,7 @@
 ---
-title: Appsody Quick Start
+title: Quick start
 path: /docs/getting-started/quick-start
-section: Getting Started
+section: Getting started
 ---
 
 # Appsody Quick Start

@@ -1,5 +1,5 @@
 ---
-title: "Appsody Local Development"
+title: "Local development"
 section: Using Appsody
 path: /docs/using-appsody/local-development
 ---

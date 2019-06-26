@@ -1,7 +1,7 @@
 ---
-title: "Create or Modify"
+title: "Creating and modifying stacks"
 path: /docs/stacks/create-or-modify
-section: Stacks
+section: Appsody Stacks
 ---
 # Creating and Modifying Stacks
 
@@ -15,7 +15,7 @@ Use the following examples to help you get started creating, or modifying stacks
 
 The quickest way to create an Appsody stack from scratch is to build from the [sample stack](sample-stack/README.md) which is provided in this repository. Clone the sample:
 
-1. 
+1.
     ```bash
     git clone https://github.com/appsody/docs
     cd docs/sample-stack

@@ -1,5 +1,5 @@
 ---
-title: Appsody CLI Reference
+title: CLI Reference
 path: /docs/using-appsody/cli-commands
 section: Using Appsody
 ---
@@ -76,7 +76,7 @@ Generates bash tab completions
 
 ### Synopsis
 
-Outputs a bash completion script for appsody to stdout.  Bash completion is optionally available for your convenience. It helps you fill out appsody commands when you type the [TAB] key. 
+Outputs a bash completion script for appsody to stdout.  Bash completion is optionally available for your convenience. It helps you fill out appsody commands when you type the [TAB] key.
 
 	To install on macOs
 	1. brew install bash-completion
@@ -84,8 +84,8 @@ Outputs a bash completion script for appsody to stdout.  Bash completion is opti
 	3. appsody completion > /usr/local/etc/bash_completion.d/appsody
 
 	To install on Linux
-	1. On a current Linux OS (in a non-minimal installation), bash completion should be available. 
-	2. For Debian see the following link for more information:  https://debian-administration.org/article/316/An_introduction_to_bash_completion_part_1 
+	1. On a current Linux OS (in a non-minimal installation), bash completion should be available.
+	2. For Debian see the following link for more information:  https://debian-administration.org/article/316/An_introduction_to_bash_completion_part_1
 	3. Make sure to copy the appsody completion file generated above into the appropriate directory for your Linux distribution e.g.
 	appsody completion >  /etc/bash_completion.d/appsody
 
@@ -155,7 +155,7 @@ Build and deploy your Appsody project on a local Kubernetes cluster
 ### Synopsis
 
 This command extracts the code from your project, builds a local Docker image for deployment,
-generates a KNative serving deployment manifest (yaml) file, and deploys your image as a KNative 
+generates a KNative serving deployment manifest (yaml) file, and deploys your image as a KNative
 service in your local cluster.
 
 ```
@@ -224,14 +224,14 @@ Initialize an Appsody project with a stack and template app
 
 ### Synopsis
 
-This creates a new Appsody project in a local directory or sets up the local dev environment of an existing Appsody project. 
+This creates a new Appsody project in a local directory or sets up the local dev environment of an existing Appsody project.
 
-With the [stack] argument, this command will setup a new Appsody project. It will create an Appsody stack config file, unzip a template app, and 
+With the [stack] argument, this command will setup a new Appsody project. It will create an Appsody stack config file, unzip a template app, and
 run the stack init script to setup the local dev environment. It is typically run on an empty directory and may fail
 if files already exist. See the --overwrite and --no-template options for more details.
 Use 'appsody list' to see the available stack options.
 
-Without the [stack] argument, this command must be run on an existing Appsody project and will only run the stack init script to 
+Without the [stack] argument, this command must be run on an existing Appsody project and will only run the stack init script to
 setup the local dev environment.
 
 ```
