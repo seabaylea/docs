@@ -30,7 +30,7 @@ java-spring-boot2	0.2.0  	Spring Boot using IBM Java SDK and Maven
 
 Then, run `appsody init <stack>` for the stack of your choice. This will download the default project template for the stack and initialize Appsody for your local development.
 
-Now you have a fully functional Appsody project. See the [Local Development](local-development.md) document for more details on running the project.
+Now you have a fully functional Appsody project. See the [Local Development](/docs/using-appsody/local-development.md) document for more details on running the project.
 
 
 ## Existing Project to Appsody
@@ -42,4 +42,4 @@ Next, from the project directory, run `appsody init <stack> --no-template` to in
 
 Now you will likely need to update the structure of your project so the stack can find and run your code. Each stack has a different structure, so you will need to study your chosen stack's documentation and project template for guidance.
 
-Once the project structure is updated, you should try `appsody run` to verify it is working. See more about running an Appsody project in the [Local Development](local-development.md) document.
+Once the project structure is updated, you should try `appsody run` to verify it is working. See more about running an Appsody project in the [Local Development](/docs/using-appsody/local-development.md) document.
