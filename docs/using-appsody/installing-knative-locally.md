@@ -17,7 +17,7 @@ Next ensure that Kubernetes has enough resources to run your apps by selecting t
 
 You can now use the following commands to install Knative Serving 0.6.0 (currently the latest version) and its Istio dependency using the following commands:
 
-1. Install Istio 0.5.2:
+1. Install Istio:
 
 	```sh
 	curl -L https://raw.githubusercontent.com/knative/serving/v0.5.2/third_party/istio-1.0.7/istio.yaml \
