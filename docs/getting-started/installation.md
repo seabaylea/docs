@@ -20,11 +20,11 @@ You should have [Docker](https://docs.docker.com/get-started/) installed and the
 ## Installing on macOS
 Ensure the [prerequisites](#Prerequisites) are met.
 
-Run these two commands:
+Run this command: 
 ```
-brew tap appsody/appsody
-brew install appsody
+brew install appsody/appsody/appsody
 ```
+The command will create a brew tap for the `appsody/appsody` repo, and install the `appsody` formula for you.
 
 If you have not installed the Xcode Command Line Tools, you may see an error message stating:
 ```
